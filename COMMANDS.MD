@@ -139,7 +139,7 @@
 
 ----
 
-- > **`git diff dddqwqweqwd`**  
+- > **`git diff `**  
 
     *comando para revisar los cambios realizados antes de hacer un commit*
 
