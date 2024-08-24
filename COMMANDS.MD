@@ -135,13 +135,17 @@
      
 
 ----
-- > **`git reset `**  
+- > **`git reset qweqwe`**  
 
     *comando para restablecer el código a un commit anterior*
 
 ----
 
+<<<<<<< HEAD
 - > **`git diff`**  
+=======
+- > **`git diff `**  
+>>>>>>> prueba
 
     *comando para revisar los cambios realizados antes de hacer un commit*
 
