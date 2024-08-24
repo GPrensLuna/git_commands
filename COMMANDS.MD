@@ -132,6 +132,8 @@
 
      > **En este caso se actualizo la rama de prueba con los cambios que se realizaron en la branch main**
 
+     
+
 ----
 - > **`git reset `**  
 
@@ -139,7 +141,7 @@
 
 ----
 
-- > **`git diff sasdsd`**  
+- > **`git diff`**  
 
     *comando para revisar los cambios realizados antes de hacer un commit*
 
