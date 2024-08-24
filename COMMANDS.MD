@@ -133,13 +133,13 @@
      > **En este caso se actualizo la rama de prueba con los cambios que se realizaron en la branch main**
 
 ----
-- > **`git reset `**  
+- > **`git reset qweqwe`**  
 
     *comando para restablecer el código a un commit anterior*
 
 ----
 
-- > **`git diff dddd`**  
+- > **`git diff dddqwqweqwd`**  
 
     *comando para revisar los cambios realizados antes de hacer un commit*
 
