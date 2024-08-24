@@ -52,13 +52,6 @@
     ![alt](/img/git_commit.png)
 ----
 
-- > **`git tag <nameTag> `**  
-
-    *comando para revisar los cambios realizados antes de hacer un commit*
-
-    ![alt](/img/git_tag.png)
-----
-
 - > **`git status`**  
 
     *comando para ver en que proceso están los archivos del repositorio local*
@@ -71,7 +64,11 @@
     *comando para ver todos los commit anterior mente realizados*
     
     ![alt](/img/git_log.png)
-    
+
+    *si añades un tag tambien se puede visualizar en los log*
+
+    ![alt](/img/git_log_tag.png)
+
     ----
     otras opciones 
     ----
@@ -94,16 +91,23 @@
     ----
     - ***Ejemplos***
 
+      > como moverse o navegar entre commit, brach y tag
+
     > **`git checkout <name_of_file>`** 
 
-      > Crea una captara de código actual ubicado en el archivo
-     
-    - ***CASO 1 - LOG***
-
-    ![alt](/img/git_checkout_log.png)
-    - ***CASO 2 - BRANCH***
+    *forma de ir a una commit*
 
     ![alt](/img/git_checkout_branch.png)
+    
+    *forma de ir a una brach*
+
+    ![alt](/img/git_checkout_branch.png)
+    
+    *forma de ir a un tag*
+
+    ![alt](/img/git_checkout_tag.png)
+
+
 ----
 
 - > **`git reset `**  
