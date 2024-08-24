@@ -30,6 +30,14 @@
     ![alt](/img/git_branch.png)
 ----
 
+- > **`git switch <nameBranch> `**  
+
+    *comando para cambiar entre las diversas branch que se van creando mejora la gestión y flujo de trabajo*
+
+    ![alt](/img/git_switch.png)
+----
+
+
 - > **`git add <name_of_file>`**  
 
     *comando para añadir archivos (guardar) al repositorio local*
@@ -58,6 +66,12 @@
 
     ![alt](/img/git_status.png)
 ----
+- > **`git tag <nameTag>`**  
+
+    *comando para crear un punto de restauración con un identificador para distinguir las versiones*
+
+    ![alt](/img/git_tag.png)
+----
 
 - > **`git log`**  
 
@@ -65,7 +79,7 @@
     
     ![alt](/img/git_log.png)
 
-    *si añades un tag tambien se puede visualizar en los log*
+    *si añades un tag también se puede visualizar en los log*
 
     ![alt](/img/git_log_tag.png)
 
@@ -91,32 +105,43 @@
     ----
     - ***Ejemplos***
 
-      > como moverse o navegar entre commit, brach y tag
-
     > **`git checkout <name_of_file>`** 
+    > como moverse o navegar entre commit, brach y tag
 
-    *forma de ir a una commit*
+
+    - ***forma de ir a una commit***
+
+    ![alt](/img/git_checkout_commits.png)
+    
+    - ***forma de ir a una brach***
 
     ![alt](/img/git_checkout_branch.png)
     
-    *forma de ir a una brach*
-
-    ![alt](/img/git_checkout_branch.png)
-    
-    *forma de ir a un tag*
+    - ***forma de ir a un tag***
 
     ![alt](/img/git_checkout_tag.png)
 
 
 ----
 
+- > **`git merge <NameBranch> `**  
+
+    *comando para actualizar el código en distintas ramas*
+
+    ![alt](/img/git_merge.png)
+
+     > **En este caso se actualizo la rama de prueba con los cambios que se realizaron en la branch main**
+
+----
 - > **`git reset `**  
 
     *comando para restablecer el código a un commit anterior*
 
 ----
+
 - > **`git diff `**  
 
     *comando para revisar los cambios realizados antes de hacer un commit*
 
 ----
+
