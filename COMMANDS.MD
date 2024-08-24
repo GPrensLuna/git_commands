@@ -52,6 +52,13 @@
     ![alt](/img/git_commit.png)
 ----
 
+- > **`git tag <nameTag> `**  
+
+    *comando para revisar los cambios realizados antes de hacer un commit*
+
+    ![alt](/img/git_tag.png)
+----
+
 - > **`git status`**  
 
     *comando para ver en que proceso están los archivos del repositorio local*
@@ -90,15 +97,13 @@
     > **`git checkout <name_of_file>`** 
 
       > Crea una captara de código actual ubicado en el archivo
-
-    > **`git checkout <name_of_file>`** 
-
-      > Crea una captara de código actual ubicado en el archivo
-
-    > **`git checkout <name_of_file>`** 
-
-      > Crea una captara de código actual ubicado en el archivo
      
+    - ***CASO 1 - LOG***
+
+    ![alt](/img/git_checkout_log.png)
+    - ***CASO 2 - BRANCH***
+
+    ![alt](/img/git_checkout_branch.png)
 ----
 
 - > **`git reset `**  
