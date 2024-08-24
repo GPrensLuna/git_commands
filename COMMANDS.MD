@@ -23,9 +23,9 @@
 
 - > **`git branch -m <name>`**
 
-    *comando para inicializar una nueva rama en el proyecto con la **-m** le indicamos que lo vamos a nombrar <name>, que se reemplaza por el nombre que deseamos*
+    *comando para inicializar una nueva branch en el proyecto con la **-m** le indicamos que lo vamos a nombrar <name>, que se reemplaza por el nombre que deseamos*
     > **`git branch -m main`** 
-    > *Crea una rama del proyecto cn el nombre main*
+    > *Crea una branch del proyecto cn el nombre main*
 
     ![alt](/img/git_branch.png)
 ----
@@ -126,26 +126,43 @@
 
 - > **`git merge <NameBranch> `**  
 
-    *comando para actualizar el código en distintas ramas*
+    *comando para actualizar el código en distintas branchs*
 
+     > **En este caso se actualizo la branch de prueba con los cambios que se realizaron en la branch main**
     ![alt](/img/git_merge.png)
 
-     > **En este caso se actualizo la rama de prueba con los cambios que se realizaron en la branch main**
 
-     
+     > **En este caso de que el merge falle**
+    ![alt](/img/git_no_marge.png)
+
+     > **Revision de código en lo que se genero conflicto, se puede seleccionar las opciones que salen arriba**
+
+     - Aceptar cambios actuales  
+        > acepta los cambios que tenia s en tu código
+
+     - Aceptar cambios entrantes 
+        > acepta los cambios que tenia la branch con la que estas actualizando
+
+     - Aceptar ambos cambios 
+        > acepta los cambios de los 2 branch y los visualizas juntos
+  
+    ![alt](/img/git_no_marge-diff.png)
+
+   - Al aceptar los cambios recordar guardar los cambios y hacer un nuevo commit
+  
+    ![alt](/img/git_marge_no-diff.png)
+
+     > **En este caso se actualizo la branch de prueba con los cambios que se realizaron en la branch main**
 
 ----
+
 - > **`git reset qweqwe`**  
 
     *comando para restablecer el código a un commit anterior*
 
 ----
 
-<<<<<<< HEAD
 - > **`git diff`**  
-=======
-- > **`git diff `**  
->>>>>>> prueba
 
     *comando para revisar los cambios realizados antes de hacer un commit*
 
