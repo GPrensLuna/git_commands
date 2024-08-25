@@ -5,8 +5,8 @@ export const DataLog = [
     description:
       "Muestra el historial completo de commits en el repositorio, incluyendo mensajes, autores y fechas de los commits realizados.",
     code: "git log",
-    img: "/img/git_log.png",
-    roles: ["personal", "stark"],
+    img: "/log/git_log.png",
+    roles: ["log", "basic"],
     emoji: "📜",
   },
   {
@@ -15,8 +15,8 @@ export const DataLog = [
     description:
       "Muestra los cambios realizados en los últimos commits, incluyendo las diferencias entre versiones. Ayuda a revisar el historial reciente del proyecto.",
     code: "git log -p",
-    img: "/img/git_log_p.png",
-    roles: ["personal", "stark"],
+    img: "/log/git_log_p.png",
+    roles: ["log"],
     emoji: "📜",
   },
   {
@@ -25,8 +25,8 @@ export const DataLog = [
     description:
       "Muestra el historial de commits en un formato compacto, con una sola línea por commit. Esto facilita una vista rápida del historial del proyecto.",
     code: "git log --oneline",
-    img: "/img/git_log_oneline.png",
-    roles: ["personal", "stark"],
+    img: "/log/git_log_oneline.png",
+    roles: ["log"],
     emoji: "📜",
   },
   {
@@ -35,8 +35,8 @@ export const DataLog = [
     description:
       "Muestra el historial de commits con un gráfico visual que representa la estructura de ramas y merges, facilitando la comprensión de la historia del proyecto.",
     code: "git log --graph",
-    img: "/img/git_log_graph.png",
-    roles: ["personal", "stark"],
+    img: "/log/git_log_graph.png",
+    roles: ["log"],
     emoji: "📜",
   },
   {
@@ -45,8 +45,8 @@ export const DataLog = [
     description:
       "Muestra el historial de commits en formato compacto junto con un gráfico visual que representa la estructura de ramas y merges.",
     code: "git log --graph --oneline",
-    img: "/img/git_log_graph_oneline.png",
-    roles: ["personal", "stark"],
+    img: "/log/git_log_graph_oneline.png",
+    roles: ["log"],
     emoji: "📜",
   },
   {
@@ -55,8 +55,8 @@ export const DataLog = [
     description:
       "Muestra el historial de commits con un gráfico visual, decoraciones y nombres de ramas y etiquetas para una mejor comprensión del historial del proyecto.",
     code: "git log --graph --decorate",
-    img: "/img/git_log_graph_decorate.png",
-    roles: ["personal", "stark"],
+    img: "/log/git_log_graph_decorate.png",
+    roles: ["log"],
     emoji: "📜",
   },
   {
@@ -65,8 +65,8 @@ export const DataLog = [
     description:
       "Muestra el historial de commits para todas las ramas en el repositorio, incluyendo un gráfico que representa la estructura de ramas y merges.",
     code: "git log --graph --decorate --all --oneline",
-    img: "/img/git_log_all.png",
-    roles: ["personal", "stark"],
+    img: "/log/git_log_all.png",
+    roles: ["log"],
     emoji: "📜",
   },
   {
@@ -75,8 +75,8 @@ export const DataLog = [
     description:
       "Muestra los commits realizados desde una fecha específica. Esto es útil para revisar el historial reciente desde un punto temporal determinado.",
     code: "git log --since=<date>",
-    img: "/img/git_log_since.png",
-    roles: ["personal", "stark"],
+    img: "/log/git_log_since.png",
+    roles: ["log"],
     emoji: "📜",
   },
   {
@@ -85,8 +85,8 @@ export const DataLog = [
     description:
       "Muestra los commits realizados hasta una fecha específica. Esto es útil para revisar el historial hasta un punto en el tiempo.",
     code: "git log --until=<date>",
-    img: "/img/git_log_until.png",
-    roles: ["personal", "stark"],
+    img: "/log/git_log_until.png",
+    roles: ["log"],
     emoji: "📜",
   },
   {
@@ -95,8 +95,8 @@ export const DataLog = [
     description:
       "Muestra los commits realizados por un autor específico. Esto es útil para revisar los cambios hechos por un contribuyente en particular.",
     code: "git log --author=<author_name>",
-    img: "/img/git_log_author.png",
-    roles: ["personal", "stark"],
+    img: "/log/git_log_author.png",
+    roles: ["log"],
     emoji: "📜",
   },
   {
@@ -105,8 +105,8 @@ export const DataLog = [
     description:
       "Filtra los commits que contienen un mensaje específico. Esto es útil para buscar commits relacionados con un término específico.",
     code: "git log --grep=<search_term>",
-    img: "/img/git_log_grep.png",
-    roles: ["personal", "stark"],
+    img: "/log/git_log_grep.png",
+    roles: ["log"],
     emoji: "📜",
   },
   {
@@ -115,8 +115,8 @@ export const DataLog = [
     description:
       "Muestra los identificadores de commit abreviados. Esto proporciona una vista más compacta del historial de commits.",
     code: "git log --abbrev-commit",
-    img: "/img/git_log_abbrev_commit.png",
-    roles: ["personal", "stark"],
+    img: "/log/git_log_abbrev_commit.png",
+    roles: ["log"],
     emoji: "📜",
   },
   {
@@ -125,8 +125,8 @@ export const DataLog = [
     description:
       "Permite personalizar el formato de salida del historial de commits. Esto es útil para ajustar la presentación de los commits.",
     code: "git log --pretty=<format>",
-    img: "/img/git_log_pretty.png",
-    roles: ["personal", "stark"],
+    img: "/log/git_log_pretty.png",
+    roles: ["log"],
     emoji: "📜",
   },
 ];

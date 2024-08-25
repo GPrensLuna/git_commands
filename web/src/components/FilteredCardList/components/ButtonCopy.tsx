@@ -16,11 +16,11 @@ export const ButtonCopy: React.FC<ButtonCopyProps> = ({ code }) => {
 
   return (
     <button
-      className="absolute top-2 right-2 bg-lightBlue text-white dark:text-darkGray p-2 rounded-md shadow-sm hover:bg-skyBlue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lightBlue transition-colors"
+      className=" bg-lightBlue text-white dark:text-darkGray p-1 rounded-md shadow-sm hover:bg-skyBlue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lightBlue transition-colors text-sm font-bold uppercase "
       onClick={() => copyToClipboard(code)}
       aria-label="Copiar código al portapapeles"
     >
-      Copiar
+      Copiar código
     </button>
   );
 };
