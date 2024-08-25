@@ -1,36 +1,36 @@
 "use client";
-import { useState, useMemo, useCallback } from "react";
+import { useMemo, useCallback } from "react";
+import { useSearchParams } from "next/navigation";
 import { CardDataArray, DataMenu } from "@/data";
-import ButtonModeToggle from "@/components/Button/ButtonModeToggle";
-import FilterInput from "./components/FilterInput";
-import FilterSelect from "./components/FilterSelect";
+import FilterControls from "./components/FilterControls";
 import CodeSnippet from "./components/CodeSnippet";
 
 const FilteredCardList = () => {
-    const [filters, setFilters] = useState({ title: "", role: "" });
+    const searchParams = useSearchParams();
+
+    const title = searchParams.get("title") || "";
+    const role = searchParams.get("role") || "";
 
     const handleFilterChange = useCallback(
         (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
             const { name, value } = e.target;
-            setFilters(prevFilters => ({
-                ...prevFilters,
-                [name]: value,
-            }));
+            const params = new URLSearchParams(searchParams.toString());
+            params.set(name, value);
+            window.history.replaceState(null, "", `?${params.toString()}`);
         },
-        []
+        [searchParams]
     );
 
     const filteredCardDataArray = useMemo(() => {
-        const titleFilter = filters.title.toLowerCase();
-        const roleFilter = filters.role;
+        const titleFilter = title.toLowerCase();
+        const roleFilter = role;
 
         return CardDataArray.filter(({ title, roles }) =>
             title.toLowerCase().includes(titleFilter) &&
             (roleFilter === "" || roles.includes(roleFilter))
         );
-    }, [filters]);
+    }, [title, role]);
 
-    // Opciones del select están predefinidas y no cambian, por lo que se usa useMemo
     const optionsCode = useMemo(() => [
         { id: 1, option: "Todos los roles", value: "" },
         { id: 2, option: "config", value: "config" },
@@ -51,23 +51,13 @@ const FilteredCardList = () => {
     ], []);
 
     return (
-        <article className="p-6 max-w-4xl mx-auto">
-            <section className="flex flex-col sm:flex-row items-center mb-6 space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
-                <FilterInput
-                    name="title"
-                    placeholder="Buscar por título..."
-                    value={filters.title}
-                    onChange={handleFilterChange}
-                />
-                <FilterSelect
-                    name="role"
-                    value={filters.role}
-                    onChange={handleFilterChange}
-                    options={optionsCode}
-                />
-                <ButtonModeToggle />
-            </section>
-
+        <article className="p-6 max-w-screen-2xl mx-auto">
+            <FilterControls
+                title={title}
+                role={role}
+                onFilterChange={handleFilterChange}
+                options={optionsCode}
+            />
             <section className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {filteredCardDataArray.length > 0 ? (
                     filteredCardDataArray.map((cardData: DataMenu) => (
