@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <main className="bg-lightGray dark:bg-darkGray min-h-screen py-10 px-4">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl font-extrabold text-navyBlue dark:text-lightGray text-center mb-8">
+        <h1 className="text-4xl font-extrabold text-navyBlue dark:text-lightGray text-center mb-8 uppercase">
           Git Commands and Code Snippets
         </h1>
         <section className='w-full grid grid-cols-2 items-center justify-center gap-5 '>
