@@ -25,6 +25,12 @@ const HomePage = () => {
             target='_blank'>
             Descargar Libro de git
           </Link>
+          <Link
+            className=" bg-lightBlue text-white dark:text-darkGray p-1 rounded-md shadow-sm hover:bg-skyBlue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lightBlue transition-colors text-sm font-bold uppercase text-center px-8"
+            href={"https://github.com/GPrensLuna/git_commands"}
+            target='_blank'>
+            Repositorio de la web GITHUB
+          </Link>
         </section>
         <FilteredCardList />
       </div>
