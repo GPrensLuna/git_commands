@@ -9,7 +9,9 @@
 > **`git config --global user.name "John Doe"`**
 > **`git config --global user.email johndoe@example.com`**
 
-![alt](/img/git_config.png)
+
+![alt](./img/git_config.png)
+
 ----
 
 ## Commands for init
@@ -18,7 +20,7 @@
 
 *comando para inicializar un repositorio local controlado por **git***
 
-![alt](/img/git_init.png)
+![alt](./img/git_init.png)
 ----
 
 - > **`git branch `**
@@ -31,7 +33,7 @@ otras opciones
 > **`git branch -m main`**
 > *Crea una branch del proyecto con el nombre main*
 
-![alt](/img/git_branch.png)
+![alt](./img/git_branch.png)
 
 - > **`git branch -d <name>`**
 
@@ -39,14 +41,14 @@ otras opciones
 > **`git branch -d prueba`**
 > *Elimina una branch del proyecto*
 
-![alt](/img/git_branch.png)
+![alt](./img/git_branch.png)
 ----
 
 - > **`git switch <nameBranch> `**
 
 *comando para cambiar entre las diversas branch que se van creando mejora la gestión y flujo de trabajo*
 
-![alt](/img/git_switch.png)
+![alt](./img/git_switch.png)
 ----
 
 
@@ -59,7 +61,7 @@ otras opciones
 
 > **`git add .`**
 > *Crea una captara de todo código actual*
-![alt](/img/git_add.png)
+![alt](./img/git_add.png)
 ----
 
 - > **`git commit -m "<contenido>"`**
@@ -68,30 +70,30 @@ otras opciones
 > **`git commit -m "commit inicial del proyecto"`**
 > *Crea una comentario a lo archivos modificados
 
-![alt](/img/git_commit.png)
+![alt](./img/git_commit.png)
 ----
 
 - > **`git status`**
 
 *comando para ver en que proceso están los archivos del repositorio local*
 
-![alt](/img/git_status.png)
+![alt](./img/git_status.png)
 ----
 - > **`git tag <nameTag>`**
 
 *comando para crear un punto de restauración con un identificador para distinguir las versiones*
 
-![alt](/img/git_tag.png)
+![alt](./img/git_tag.png)
 ----
 
 - > **`git log`**
 
 *comando para ver todos los commit anterior mente realizados*
-![alt](/img/git_log.png)
+![alt](./img/git_log.png)
 
 *si añades un tag también se puede visualizar en los log*
 
-![alt](/img/git_log_tag.png)
+![alt](./img/git_log_tag.png)
 
 ----
 otras opciones
@@ -120,13 +122,13 @@ otras opciones
 
 - ***forma de ir a una commit***
 
-![alt](/img/git_checkout_commits.png)
+![alt](./img/git_checkout_commits.png)
 - ***forma de ir a una brach***
 
-![alt](/img/git_checkout_branch.png)
+![alt](./img/git_checkout_branch.png)
 - ***forma de ir a un tag***
 
-![alt](/img/git_checkout_tag.png)
+![alt](./img/git_checkout_tag.png)
 
 
 ----
@@ -136,11 +138,11 @@ otras opciones
 *comando para actualizar el código en distintas branch*
 
 > **En este caso se actualizo la branch de prueba con los cambios que se realizaron en la branch main**
-![alt](/img/git_merge.png)
+![alt](./img/git_merge.png)
 
 
 > **En este caso de que el merge falle**
-![alt](/img/git_no_marge.png)
+![alt](./img/git_no_marge.png)
 
 > **Revision de código en lo que se genero conflicto, se puede seleccionar las opciones que salen arriba**
 
@@ -153,11 +155,11 @@ otras opciones
 - Aceptar ambos cambios
 > acepta los cambios de los 2 branch y los visualizas juntos
 
-![alt](/img/git_no_marge-diff.png)
+![alt](./img/git_no_marge-diff.png)
 
 - Al aceptar los cambios recordar guardar los cambios y hacer un nuevo commit
 
-![alt](/img/git_marge_no-diff.png)
+![alt](./img/git_marge_no-diff.png)
 
 > **En este caso se actualizo la branch de prueba con los cambios que se realizaron en la branch main**
 
