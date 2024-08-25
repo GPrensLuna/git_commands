@@ -1,4 +1,8 @@
-import FilteredCardList from "@/components/FilteredCardList"
+import dynamic from 'next/dynamic';
+
+const FilteredCardList = dynamic(() => import('@/components/FilteredCardList'), {
+  ssr: false,
+});
 
 const HomePage = () => {
   return (
