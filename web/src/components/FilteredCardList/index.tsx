@@ -8,8 +8,8 @@ import CodeSnippet from "./components/CodeSnippet";
 const FilteredCardList = () => {
     const searchParams = useSearchParams();
 
-    const title = searchParams.get("title") || "";
-    const role = searchParams.get("role") || "";
+    const title = searchParams.get("title") ?? "";
+    const role = searchParams.get("role") ?? "";
 
     const handleFilterChange = useCallback(
         (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
